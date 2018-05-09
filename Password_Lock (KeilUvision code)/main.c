@@ -21,7 +21,7 @@ sbit led_red = P2^7;
 void scan();
 void delay(unsigned char);
 unsigned char password[] = "CAT"; // change password here
-unsigned char user[32]; // max input length 16 characters
+unsigned char user[32]; // max input length 32 characters
 int m = -1;
 unsigned char l = 0, password_length = 0, temp = 0, bool = 0;
 
