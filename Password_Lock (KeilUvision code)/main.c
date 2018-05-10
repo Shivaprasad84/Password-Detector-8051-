@@ -429,7 +429,6 @@ void scan()
             if(temp == password_length)
             {
                 led_green = 1;
-                led_red = 0;
                 lcd_cmd(0x01);
                 lcd_cmd(0x81);
                 lcd_string("ACCESS GRANTED");
@@ -437,7 +436,6 @@ void scan()
             else
             {
                 led_red = 1;
-                led_green = 0;
                 lcd_cmd(0x01);
                 lcd_cmd(0x81);
                 lcd_string("ACCESS DENIED");
