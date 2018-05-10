@@ -48,6 +48,11 @@ void main()
 
 void scan()
 {
+    if(m == 15)
+	{
+		lcd_cmd(0xc0);
+	}
+    
     // Row 1 //
 
     r1 = 0;
